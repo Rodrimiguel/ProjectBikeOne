@@ -18,4 +18,15 @@
 
 <p>{{ datos | json }}</p>
 
+<p>utilizamos el componente hijo dentro del
+  componente "app"</p>
+
+  <!-- le enviamos al componente "hijo" el objeto 
+  "datos" que se encuentra definido como un atributo 
+  del componente "app", este atributo sera recibido en 
+  el atributo "datohijo" del componente "hijo" -->
+
+  <app-hijo [propiedadhijo]="datos"></app-hijo>
+
+
 <router-outlet>

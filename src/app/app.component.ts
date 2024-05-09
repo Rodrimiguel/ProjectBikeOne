@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { HijoComponent } from './componentes/hijo/hijo.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CommonModule],
+  imports: [RouterOutlet,CommonModule,HijoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -21,9 +22,9 @@ export class AppComponent {
 
   //atajo para identar el codigo : alt + shift + "f"
   datos: any = {
-    nombre: "Ford",
-    apellido: "Company",
-    edad: 100,
+    nombre: "Keanu",
+    apellido: "Reeves",
+    edad: 45,
     documento: "70-100100-50"
   }
 
